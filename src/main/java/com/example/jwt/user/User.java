@@ -3,6 +3,7 @@ package com.example.jwt.user;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -16,6 +17,7 @@ import static javax.persistence.GenerationType.*;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class User {
 
     @Id @GeneratedValue(strategy = IDENTITY)
